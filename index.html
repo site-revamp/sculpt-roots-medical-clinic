@@ -1,48 +1,2046 @@
-<!-- Icon 1: Hair follicle -->
-<div class="treatment-icon" aria-hidden="true">
-  <svg viewBox="0 0 48 48" fill="none">
-    <path d="M24 40V22M24 22C16 22 13 16 15 9M24 22C32 22 35 16 33 9"
-      stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/>
-    <path d="M15 9C18 12 20 13 24 13C28 13 30 12 33 9"
-      stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/>
-    <path d="M18 40H30" stroke="currentColor" stroke-width="1.6"
-      stroke-linecap="round"/>
-    <circle cx="24" cy="6" r="2" stroke="currentColor" stroke-width="1.5"/>
-  </svg>
-</div>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#FAF7F3">
+  <meta name="description" content="Explore hair restoration and aesthetic treatments at Sculpt Roots Medical Clinic in Deira, Dubai. Discover treatment options and request a consultation.">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://sculptroots.com/">
+  <title>Sculpt Roots | Hair Restoration & Aesthetic Clinic Dubai</title>
 
-<!-- Icon 2: Beard and facial hair -->
-<div class="treatment-icon" aria-hidden="true">
-  <svg viewBox="0 0 48 48" fill="none">
-    <path d="M12 17C12 9 18 5 24 5C30 5 36 9 36 17"
-      stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/>
-    <path d="M12 17C10 25 14 34 24 42C34 34 38 25 36 17"
-      stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/>
-    <path d="M17 21C20 23 28 23 31 21M20 29C22 31 26 31 28 29"
-      stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
-  </svg>
-</div>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 
-<!-- Icon 3: Hairline -->
-<div class="treatment-icon" aria-hidden="true">
-  <svg viewBox="0 0 48 48" fill="none">
-    <path d="M10 29C11 16 17 8 24 8C31 8 37 16 38 29"
-      stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/>
-    <path d="M14 26C18 20 30 20 34 26"
-      stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/>
-    <path d="M16 34C20 38 28 38 32 34"
-      stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/>
-    <path d="M24 8V3" stroke="currentColor" stroke-width="1.5"
-      stroke-linecap="round"/>
-  </svg>
-</div>
+  <style>
+    :root {
+      --color-primary: #D9B99B;
+      --color-primary-dark: #8C7059;
+      --color-primary-light: #F0E3D7;
+      --color-secondary: #333333;
+      --color-secondary-dark: #242424;
+      --color-secondary-light: #4B4946;
+      --color-accent: #5E7988;
+      --color-heading: #292724;
+      --color-text: #4B4946;
+      --color-text-muted: #706B66;
+      --color-background: #FAF7F3;
+      --color-background-alt: #EDE8E2;
+      --color-surface: #FFFFFF;
+      --color-surface-alt: #F4EEE8;
+      --color-border: #DED5CC;
+      --color-border-strong: #B9A99B;
+      --color-interactive: #315B70;
+      --color-interactive-hover: #24485B;
+      --color-focus: #315B70;
 
-<!-- Icon 4: PRP treatment -->
-<div class="treatment-icon" aria-hidden="true">
-  <svg viewBox="0 0 48 48" fill="none">
-    <path d="M24 5C24 5 11 21 11 29C11 36 17 42 24 42C31 42 37 36 37 29C37 21 24 5 24 5Z"
-      stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/>
-    <path d="M18 30C18 34 21 37 25 37"
-      stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/>
-  </svg>
-</div>
+      --font-heading: "Cormorant Garamond", Georgia, serif;
+      --font-body: "Manrope", Arial, sans-serif;
+
+      --container: 1240px;
+      --gutter: clamp(22px, 5vw, 76px);
+      --section-space: clamp(76px, 10vw, 142px);
+      --radius-sm: 8px;
+      --radius-md: 18px;
+      --radius-lg: 28px;
+      --shadow-soft: 0 18px 55px rgba(51, 51, 51, 0.09);
+    }
+
+    *, *::before, *::after { box-sizing: border-box; }
+
+    html {
+      scroll-behavior: smooth;
+      scroll-padding-top: 100px;
+    }
+
+    body {
+      margin: 0;
+      background: var(--color-background);
+      color: var(--color-text);
+      font-family: var(--font-body);
+      font-size: 17px;
+      line-height: 1.65;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    body.menu-open { overflow: hidden; }
+
+    img {
+      display: block;
+      width: 100%;
+      height: auto;
+    }
+
+    a { color: inherit; text-decoration: none; }
+
+    button, input, select, textarea { font: inherit; }
+
+    button, a { -webkit-tap-highlight-color: transparent; }
+
+    button:focus-visible, a:focus-visible,
+    input:focus-visible, select:focus-visible,
+    textarea:focus-visible {
+      outline: 3px solid var(--color-focus);
+      outline-offset: 4px;
+    }
+
+    ::selection {
+      color: var(--color-secondary-dark);
+      background: var(--color-primary-light);
+    }
+
+    .container {
+      width: min(var(--container), calc(100% - var(--gutter) * 2));
+      margin-inline: auto;
+    }
+
+    .eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 12px;
+      margin: 0 0 20px;
+      color: var(--color-primary-dark);
+      font-size: 12px;
+      font-weight: 800;
+      letter-spacing: .18em;
+      line-height: 1.4;
+      text-transform: uppercase;
+    }
+
+    .eyebrow::before {
+      content: "";
+      width: 28px;
+      height: 1px;
+      background: currentColor;
+    }
+
+    h1, h2, h3, h4, p { margin-top: 0; }
+
+    h1, h2, h3, h4 {
+      color: var(--color-heading);
+      font-family: var(--font-heading);
+      font-weight: 600;
+      letter-spacing: -.035em;
+      line-height: .99;
+    }
+
+    h1 {
+      max-width: 780px;
+      margin-bottom: 28px;
+      font-size: clamp(48px, 6.3vw, 82px);
+    }
+
+    h2 {
+      margin-bottom: 22px;
+      font-size: clamp(40px, 5vw, 62px);
+    }
+
+    h3 {
+      margin-bottom: 14px;
+      font-size: clamp(27px, 3vw, 36px);
+    }
+
+    h4 {
+      margin-bottom: 10px;
+      font-size: 24px;
+    }
+
+    p { margin-bottom: 18px; }
+
+    .lead {
+      max-width: 610px;
+      color: var(--color-text-muted);
+      font-size: clamp(17px, 1.5vw, 19px);
+      line-height: 1.8;
+    }
+
+    .section-intro {
+      max-width: 680px;
+      margin-bottom: 54px;
+    }
+
+    .section-intro.centered {
+      margin-inline: auto;
+      text-align: center;
+    }
+
+    .section-intro.centered .eyebrow {
+      justify-content: center;
+    }
+
+    .section-intro.centered .lead { margin-inline: auto; }
+
+    .button {
+      display: inline-flex;
+      min-height: 54px;
+      align-items: center;
+      justify-content: center;
+      gap: 12px;
+      padding: 14px 24px;
+      border: 1px solid transparent;
+      border-radius: 3px;
+      cursor: pointer;
+      font-size: 14px;
+      font-weight: 800;
+      letter-spacing: .035em;
+      line-height: 1.3;
+      transition: background .25s ease, color .25s ease,
+                  border-color .25s ease, transform .25s ease;
+    }
+
+    .button:hover { transform: translateY(-2px); }
+
+    .button-primary {
+      background: var(--color-secondary);
+      color: #FFFFFF;
+    }
+
+    .button-primary:hover {
+      background: var(--color-interactive);
+    }
+
+    .button-light {
+      border-color: rgba(255,255,255,.65);
+      background: transparent;
+      color: #FFFFFF;
+    }
+
+    .button-light:hover {
+      background: #FFFFFF;
+      color: var(--color-secondary);
+    }
+
+    .button-outline {
+      border-color: var(--color-border-strong);
+      background: transparent;
+      color: var(--color-secondary);
+    }
+
+    .button-outline:hover {
+      border-color: var(--color-secondary);
+      background: var(--color-secondary);
+      color: #FFFFFF;
+    }
+
+    .button-arrow {
+      width: 17px;
+      height: 17px;
+      flex: 0 0 auto;
+    }
+
+    .topbar {
+      padding: 10px var(--gutter);
+      background: var(--color-secondary);
+      color: rgba(255,255,255,.85);
+      text-align: center;
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: .13em;
+      text-transform: uppercase;
+    }
+
+    .site-header {
+      position: sticky;
+      z-index: 1000;
+      top: 0;
+      border-bottom: 1px solid rgba(185,169,155,.35);
+      background: rgba(250,247,243,.96);
+      backdrop-filter: blur(16px);
+    }
+
+    .nav-wrap {
+      display: flex;
+      min-height: 88px;
+      align-items: center;
+      justify-content: space-between;
+      gap: 30px;
+    }
+
+    .brand {
+      display: inline-flex;
+      flex-direction: column;
+      flex: 0 0 auto;
+      line-height: 1;
+    }
+
+    .brand-name {
+      color: var(--color-secondary);
+      font-family: var(--font-heading);
+      font-size: 34px;
+      font-weight: 700;
+      letter-spacing: -.045em;
+    }
+
+    .brand-sub {
+      margin-top: 7px;
+      color: var(--color-primary-dark);
+      font-size: 9px;
+      font-weight: 800;
+      letter-spacing: .23em;
+      text-transform: uppercase;
+    }
+
+    .main-nav {
+      display: flex;
+      align-items: center;
+      gap: clamp(18px, 2.4vw, 34px);
+    }
+
+    .main-nav a {
+      color: var(--color-secondary-light);
+      font-size: 12px;
+      font-weight: 800;
+      transition: color .2s ease;
+    }
+
+    .main-nav a:hover { color: var(--color-primary-dark); }
+
+    .nav-actions {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .nav-actions .button {
+      min-height: 46px;
+      padding: 12px 18px;
+      font-size: 11px;
+    }
+
+    .menu-toggle {
+      display: none;
+      width: 46px;
+      height: 46px;
+      align-items: center;
+      justify-content: center;
+      border: 1px solid var(--color-border);
+      background: transparent;
+      color: var(--color-secondary);
+      cursor: pointer;
+    }
+
+    .menu-toggle span,
+    .menu-toggle span::before,
+    .menu-toggle span::after {
+      position: relative;
+      display: block;
+      width: 19px;
+      height: 1.5px;
+      background: currentColor;
+      transition: transform .2s ease;
+    }
+
+    .menu-toggle span::before,
+    .menu-toggle span::after {
+      position: absolute;
+      left: 0;
+      content: "";
+    }
+
+    .menu-toggle span::before { transform: translateY(-6px); }
+    .menu-toggle span::after { transform: translateY(6px); }
+
+    .menu-toggle[aria-expanded="true"] span { background: transparent; }
+    .menu-toggle[aria-expanded="true"] span::before { transform: rotate(45deg); }
+    .menu-toggle[aria-expanded="true"] span::after { transform: rotate(-45deg); }
+
+    /* HERO */
+
+    .hero {
+      position: relative;
+      display: grid;
+      min-height: min(760px, calc(100vh - 120px));
+      align-items: center;
+      overflow: hidden;
+      background: var(--color-secondary-dark);
+      color: #FFFFFF;
+    }
+
+    .hero-image {
+      position: absolute;
+      inset: 0 0 0 37%;
+      width: 63%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center 35%;
+    }
+
+    .hero::before {
+      position: absolute;
+      z-index: 1;
+      inset: 0;
+      background:
+        linear-gradient(90deg, #242424 0%, rgba(36,36,36,.98) 28%,
+        rgba(36,36,36,.78) 49%, rgba(36,36,36,.08) 100%),
+        linear-gradient(0deg, rgba(36,36,36,.25), transparent 60%);
+      content: "";
+    }
+
+    .hero-content {
+      position: relative;
+      z-index: 2;
+      width: min(var(--container), calc(100% - var(--gutter) * 2));
+      margin-inline: auto;
+      padding-block: 100px;
+    }
+
+    .hero .eyebrow { color: var(--color-primary); }
+
+    .hero h1 {
+      max-width: 700px;
+      color: #FFFFFF;
+    }
+
+    .hero h1 em {
+      color: var(--color-primary);
+      font-weight: 500;
+    }
+
+    .hero-copy {
+      max-width: 530px;
+      margin-bottom: 34px;
+      color: rgba(255,255,255,.78);
+      font-size: 17px;
+      line-height: 1.8;
+    }
+
+    .hero-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 13px;
+    }
+
+    .hero-note {
+      display: flex;
+      align-items: center;
+      gap: 13px;
+      margin-top: 52px;
+      color: rgba(255,255,255,.7);
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: .1em;
+      text-transform: uppercase;
+    }
+
+    .hero-note::before {
+      width: 35px;
+      height: 1px;
+      background: var(--color-primary);
+      content: "";
+    }
+
+    /* INTRODUCTION */
+
+    .intro {
+      padding-block: var(--section-space);
+    }
+
+    .intro-grid {
+      display: grid;
+      grid-template-columns: .9fr 1.1fr;
+      align-items: center;
+      gap: clamp(45px, 8vw, 115px);
+    }
+
+    .intro-visual {
+      position: relative;
+      min-height: 590px;
+    }
+
+    .intro-visual img {
+      position: absolute;
+      inset: 0 9% 8% 0;
+      width: 91%;
+      height: 92%;
+      border-radius: 2px;
+      object-fit: cover;
+    }
+
+    .intro-caption {
+      position: absolute;
+      right: 0;
+      bottom: 0;
+      width: min(250px, 65%);
+      padding: 25px;
+      background: var(--color-primary);
+      color: var(--color-secondary);
+    }
+
+    .intro-caption strong {
+      display: block;
+      font-family: var(--font-heading);
+      font-size: 29px;
+      font-weight: 600;
+      line-height: 1.05;
+    }
+
+    .intro-caption span {
+      display: block;
+      margin-top: 9px;
+      font-size: 10px;
+      font-weight: 800;
+      letter-spacing: .12em;
+      text-transform: uppercase;
+    }
+
+    .intro-copy h2 { max-width: 580px; }
+
+    .intro-copy .lead { margin-bottom: 25px; }
+
+    .text-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      padding-bottom: 7px;
+      border-bottom: 1px solid var(--color-primary-dark);
+      color: var(--color-secondary);
+      font-size: 13px;
+      font-weight: 800;
+    }
+
+    .text-link:hover { color: var(--color-primary-dark); }
+
+    /* TRUST STRIP */
+
+    .trust-strip {
+      padding-block: 34px;
+      background: var(--color-secondary);
+      color: #FFFFFF;
+    }
+
+    .trust-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 28px;
+    }
+
+    .trust-item {
+      padding-inline: 28px;
+      border-right: 1px solid rgba(255,255,255,.2);
+    }
+
+    .trust-item:first-child { padding-left: 0; }
+    .trust-item:last-child {
+      border-right: 0;
+      padding-right: 0;
+    }
+
+    .trust-item strong {
+      display: block;
+      margin-bottom: 5px;
+      color: var(--color-primary);
+      font-family: var(--font-heading);
+      font-size: 27px;
+      font-weight: 600;
+    }
+
+    .trust-item span {
+      color: rgba(255,255,255,.75);
+      font-size: 12px;
+      line-height: 1.5;
+    }
+
+    /* TREATMENTS */
+
+    .treatments {
+      padding-block: var(--section-space);
+      background: var(--color-background-alt);
+    }
+
+    .treatment-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 18px;
+    }
+
+    .treatment-card {
+      position: relative;
+      display: flex;
+      min-height: 310px;
+      flex-direction: column;
+      justify-content: space-between;
+      padding: 32px;
+      border: 1px solid rgba(185,169,155,.65);
+      background: var(--color-background);
+      transition: transform .3s ease, box-shadow .3s ease,
+                  background .3s ease;
+    }
+
+    .treatment-card:hover {
+      transform: translateY(-6px);
+      background: #FFFFFF;
+      box-shadow: var(--shadow-soft);
+    }
+
+    .treatment-number {
+      color: var(--color-primary-dark);
+      font-size: 11px;
+      font-weight: 800;
+      letter-spacing: .15em;
+    }
+
+    .treatment-card h3 { max-width: 280px; }
+
+    .treatment-card p {
+      margin-bottom: 20px;
+      color: var(--color-text-muted);
+      font-size: 14px;
+      line-height: 1.75;
+    }
+
+    .treatment-card .text-link {
+      align-self: flex-start;
+      font-size: 12px;
+    }
+
+    .treatment-feature {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      margin-top: 18px;
+      overflow: hidden;
+      background: var(--color-secondary);
+      color: #FFFFFF;
+    }
+
+    .treatment-feature img {
+      min-height: 390px;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .treatment-feature-content {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: clamp(35px, 6vw, 78px);
+    }
+
+    .treatment-feature-content h3 { color: #FFFFFF; }
+
+    .treatment-feature-content p {
+      max-width: 490px;
+      color: rgba(255,255,255,.72);
+    }
+
+    .treatment-feature-content .eyebrow { color: var(--color-primary); }
+
+    /* APPROACH */
+
+    .approach {
+      padding-block: var(--section-space);
+    }
+
+    .approach-layout {
+      display: grid;
+      grid-template-columns: .8fr 1.2fr;
+      gap: clamp(45px, 8vw, 110px);
+    }
+
+    .approach-heading {
+      position: sticky;
+      top: 130px;
+      align-self: start;
+    }
+
+    .approach-heading h2 { max-width: 440px; }
+
+    .approach-list {
+      border-top: 1px solid var(--color-border-strong);
+    }
+
+    .approach-step {
+      display: grid;
+      grid-template-columns: 62px 1fr;
+      gap: 22px;
+      padding-block: 30px;
+      border-bottom: 1px solid var(--color-border);
+    }
+
+    .step-number {
+      color: var(--color-primary-dark);
+      font-family: var(--font-heading);
+      font-size: 31px;
+      line-height: 1;
+    }
+
+    .approach-step h3 {
+      margin-bottom: 9px;
+      font-size: 29px;
+    }
+
+    .approach-step p {
+      max-width: 550px;
+      margin-bottom: 0;
+      color: var(--color-text-muted);
+      font-size: 14px;
+    }
+
+    /* DOCTOR */
+
+    .doctor {
+      padding-block: var(--section-space);
+      background: var(--color-surface-alt);
+    }
+
+    .doctor-grid {
+      display: grid;
+      grid-template-columns: .9fr 1.1fr;
+      align-items: center;
+      gap: clamp(45px, 8vw, 110px);
+    }
+
+    .doctor-image {
+      position: relative;
+      min-height: 560px;
+      background: var(--color-primary-light);
+    }
+
+    .doctor-image img {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center top;
+    }
+
+    .doctor-copy h2 { max-width: 560px; }
+
+    .doctor-copy .lead { margin-bottom: 24px; }
+
+    .credential-list {
+      display: grid;
+      gap: 12px;
+      margin: 27px 0 32px;
+      padding: 0;
+      list-style: none;
+    }
+
+    .credential-list li {
+      display: flex;
+      align-items: flex-start;
+      gap: 13px;
+      color: var(--color-text);
+      font-size: 14px;
+    }
+
+    .credential-list li::before {
+      width: 7px;
+      height: 7px;
+      flex: 0 0 7px;
+      margin-top: 8px;
+      border-radius: 50%;
+      background: var(--color-primary-dark);
+      content: "";
+    }
+
+    .credential-note {
+      padding: 17px 20px;
+      border-left: 2px solid var(--color-primary-dark);
+      background: rgba(255,255,255,.65);
+      color: var(--color-text-muted);
+      font-size: 12px;
+      line-height: 1.7;
+    }
+
+    /* EXPECTATIONS */
+
+    .expectations {
+      padding-block: var(--section-space);
+      background: var(--color-secondary);
+      color: #FFFFFF;
+    }
+
+    .expectations h2 { color: #FFFFFF; }
+
+    .expectations .lead { color: rgba(255,255,255,.7); }
+
+    .expectation-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1px;
+      margin-top: 55px;
+      background: rgba(255,255,255,.2);
+      border: 1px solid rgba(255,255,255,.2);
+    }
+
+    .expectation-card {
+      min-height: 230px;
+      padding: 35px;
+      background: var(--color-secondary);
+    }
+
+    .expectation-card .step-number {
+      display: block;
+      margin-bottom: 32px;
+      color: var(--color-primary);
+    }
+
+    .expectation-card h3 {
+      color: #FFFFFF;
+      font-size: 29px;
+    }
+
+    .expectation-card p {
+      margin-bottom: 0;
+      color: rgba(255,255,255,.68);
+      font-size: 13px;
+    }
+
+    /* FAQ */
+
+    .faq {
+      padding-block: var(--section-space);
+    }
+
+    .faq-layout {
+      display: grid;
+      grid-template-columns: .8fr 1.2fr;
+      gap: clamp(40px, 8vw, 105px);
+    }
+
+    .faq-list { border-top: 1px solid var(--color-border-strong); }
+
+    .faq-item { border-bottom: 1px solid var(--color-border); }
+
+    .faq-question {
+      display: flex;
+      width: 100%;
+      align-items: center;
+      justify-content: space-between;
+      gap: 20px;
+      padding: 23px 0;
+      border: 0;
+      background: transparent;
+      color: var(--color-heading);
+      cursor: pointer;
+      text-align: left;
+      font-family: var(--font-heading);
+      font-size: 25px;
+      font-weight: 600;
+    }
+
+    .faq-symbol {
+      display: grid;
+      width: 29px;
+      height: 29px;
+      flex: 0 0 29px;
+      place-items: center;
+      border: 1px solid var(--color-border-strong);
+      border-radius: 50%;
+      font-family: var(--font-body);
+      font-size: 18px;
+      transition: transform .2s ease;
+    }
+
+    .faq-question[aria-expanded="true"] .faq-symbol {
+      transform: rotate(45deg);
+    }
+
+    .faq-answer {
+      max-width: 630px;
+      padding: 0 40px 22px 0;
+      color: var(--color-text-muted);
+      font-size: 14px;
+    }
+
+    .faq-answer[hidden] { display: none; }
+
+    /* CONTACT */
+
+    .contact {
+      position: relative;
+      overflow: hidden;
+      padding-block: var(--section-space);
+      background: var(--color-primary-light);
+    }
+
+    .contact::after {
+      position: absolute;
+      top: -170px;
+      right: -160px;
+      width: 470px;
+      height: 470px;
+      border: 1px solid rgba(140,112,89,.25);
+      border-radius: 50%;
+      box-shadow: 0 0 0 55px rgba(140,112,89,.035),
+                  0 0 0 110px rgba(140,112,89,.025);
+      content: "";
+      pointer-events: none;
+    }
+
+    .contact-grid {
+      position: relative;
+      z-index: 1;
+      display: grid;
+      grid-template-columns: .85fr 1.15fr;
+      gap: clamp(40px, 7vw, 90px);
+    }
+
+    .contact-copy h2 { max-width: 490px; }
+
+    .contact-details {
+      display: grid;
+      gap: 20px;
+      margin-top: 35px;
+    }
+
+    .contact-detail {
+      padding-bottom: 18px;
+      border-bottom: 1px solid rgba(140,112,89,.28);
+    }
+
+    .contact-detail span {
+      display: block;
+      margin-bottom: 5px;
+      color: var(--color-primary-dark);
+      font-size: 10px;
+      font-weight: 800;
+      letter-spacing: .14em;
+      text-transform: uppercase;
+    }
+
+    .contact-detail a,
+    .contact-detail strong {
+      color: var(--color-secondary);
+      font-size: 15px;
+      font-weight: 700;
+    }
+
+    .contact-form {
+      padding: clamp(28px, 5vw, 55px);
+      background: #FFFFFF;
+      box-shadow: var(--shadow-soft);
+    }
+
+    .contact-form h3 { margin-bottom: 10px; }
+
+    .form-intro {
+      margin-bottom: 28px;
+      color: var(--color-text-muted);
+      font-size: 13px;
+    }
+
+    .form-row {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 16px;
+    }
+
+    .field { margin-bottom: 17px; }
+
+    .field label {
+      display: block;
+      margin-bottom: 7px;
+      color: var(--color-secondary);
+      font-size: 11px;
+      font-weight: 800;
+      letter-spacing: .04em;
+    }
+
+    .field input,
+    .field select,
+    .field textarea {
+      width: 100%;
+      min-height: 50px;
+      padding: 13px 14px;
+      border: 1px solid var(--color-border);
+      border-radius: 0;
+      background: var(--color-background);
+      color: var(--color-secondary);
+      font-size: 13px;
+    }
+
+    .field textarea {
+      min-height: 105px;
+      resize: vertical;
+    }
+
+    .field input::placeholder,
+    .field textarea::placeholder { color: #938B83; }
+
+    .form-disclaimer {
+      margin: 13px 0 0;
+      color: var(--color-text-muted);
+      font-size: 10px;
+      line-height: 1.6;
+    }
+
+    .form-status {
+      margin-top: 15px;
+      color: var(--color-interactive);
+      font-size: 13px;
+      font-weight: 700;
+    }
+
+    /* FOOTER */
+
+    .site-footer {
+      padding: 70px 0 30px;
+      background: var(--color-secondary-dark);
+      color: #FFFFFF;
+    }
+
+    .footer-top {
+      display: grid;
+      grid-template-columns: 1.3fr .7fr .8fr;
+      gap: 50px;
+      padding-bottom: 55px;
+    }
+
+    .footer-brand .brand-name { color: #FFFFFF; }
+    .footer-brand .brand-sub { color: var(--color-primary); }
+
+    .footer-description {
+      max-width: 360px;
+      margin-top: 22px;
+      color: rgba(255,255,255,.62);
+      font-size: 13px;
+    }
+
+    .footer-column h4 {
+      margin-bottom: 20px;
+      color: var(--color-primary);
+      font-family: var(--font-body);
+      font-size: 11px;
+      font-weight: 800;
+      letter-spacing: .13em;
+      text-transform: uppercase;
+    }
+
+    .footer-links {
+      display: grid;
+      gap: 12px;
+    }
+
+    .footer-links a,
+    .footer-links span {
+      color: rgba(255,255,255,.72);
+      font-size: 12px;
+      line-height: 1.6;
+    }
+
+    .footer-links a:hover { color: var(--color-primary); }
+
+    .footer-bottom {
+      display: flex;
+      justify-content: space-between;
+      gap: 20px;
+      padding-top: 24px;
+      border-top: 1px solid rgba(255,255,255,.15);
+      color: rgba(255,255,255,.5);
+      font-size: 10px;
+    }
+
+    .medical-disclaimer {
+      max-width: 700px;
+      margin-top: 25px;
+      color: rgba(255,255,255,.5);
+      font-size: 10px;
+      line-height: 1.7;
+    }
+
+    /* STICKY MOBILE ACTIONS */
+
+    .mobile-cta {
+      display: none;
+    }
+
+    /* MOTION */
+
+    @media (prefers-reduced-motion: no-preference) {
+      .reveal {
+        opacity: 0;
+        transform: translateY(22px);
+        transition: opacity .7s ease, transform .7s ease;
+      }
+
+      .reveal.is-visible {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      html { scroll-behavior: auto; }
+      *, *::before, *::after {
+        animation-duration: .01ms !important;
+        transition-duration: .01ms !important;
+      }
+    }
+
+    /* TABLET */
+
+    @media (max-width: 980px) {
+      .main-nav { gap: 16px; }
+      .main-nav a { font-size: 11px; }
+      .nav-actions .button { padding-inline: 13px; }
+
+      .hero { min-height: 680px; }
+      .hero-image { left: 28%; width: 72%; }
+      .hero::before {
+        background: linear-gradient(90deg, #242424 0%, rgba(36,36,36,.94) 38%,
+        rgba(36,36,36,.45) 75%, rgba(36,36,36,.15) 100%);
+      }
+
+      .intro-grid,
+      .doctor-grid { gap: 48px; }
+
+      .intro-visual,
+      .doctor-image { min-height: 490px; }
+
+      .treatment-grid { grid-template-columns: repeat(2, 1fr); }
+      .approach-layout { gap: 45px; }
+      .footer-top { gap: 30px; }
+    }
+
+    /* MOBILE */
+
+    @media (max-width: 760px) {
+      body {
+        font-size: 16px;
+        padding-bottom: 76px;
+      }
+
+      .topbar {
+        padding: 9px 16px;
+        font-size: 9px;
+      }
+
+      .nav-wrap { min-height: 73px; }
+
+      .brand-name { font-size: 30px; }
+      .brand-sub { font-size: 8px; }
+
+      .menu-toggle { display: flex; }
+
+      .main-nav {
+        position: fixed;
+        z-index: 1001;
+        top: 73px;
+        right: 0;
+        left: 0;
+        display: none;
+        align-items: stretch;
+        flex-direction: column;
+        gap: 0;
+        padding: 15px var(--gutter) 28px;
+        border-bottom: 1px solid var(--color-border);
+        background: var(--color-background);
+        box-shadow: 0 18px 25px rgba(36,36,36,.08);
+      }
+
+      .main-nav.is-open { display: flex; }
+
+      .main-nav a {
+        padding: 15px 0;
+        border-bottom: 1px solid var(--color-border);
+        font-size: 13px;
+      }
+
+      .nav-actions .button { display: none; }
+
+      .hero {
+        min-height: 720px;
+        align-items: end;
+      }
+
+      .hero-image {
+        inset: 0;
+        width: 100%;
+        height: 100%;
+        object-position: 60% center;
+      }
+
+      .hero::before {
+        background:
+          linear-gradient(0deg, rgba(36,36,36,.98) 0%, rgba(36,36,36,.88) 43%,
+          rgba(36,36,36,.28) 100%);
+      }
+
+      .hero-content {
+        padding-block: 80px 75px;
+      }
+
+      h1 { font-size: clamp(46px, 12vw, 60px); }
+      h2 { font-size: clamp(39px, 10vw, 49px); }
+      h3 { font-size: 29px; }
+
+      .hero-copy { font-size: 16px; }
+      .hero-note { margin-top: 35px; }
+
+      .hero-actions {
+        align-items: stretch;
+        flex-direction: column;
+      }
+
+      .hero-actions .button { width: 100%; }
+
+      .intro-grid,
+      .doctor-grid,
+      .approach-layout,
+      .faq-layout,
+      .contact-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .intro-grid,
+      .doctor-grid { gap: 45px; }
+
+      .intro-visual {
+        min-height: 440px;
+        order: 2;
+      }
+
+      .intro-copy { order: 1; }
+
+      .intro-visual img { inset: 0 7% 8% 0; }
+
+      .intro-caption { padding: 19px; }
+      .intro-caption strong { font-size: 25px; }
+
+      .trust-grid {
+        grid-template-columns: 1fr;
+        gap: 0;
+      }
+
+      .trust-item,
+      .trust-item:first-child,
+      .trust-item:last-child {
+        padding: 17px 0;
+        border-right: 0;
+        border-bottom: 1px solid rgba(255,255,255,.2);
+      }
+
+      .trust-item:last-child { border-bottom: 0; }
+
+      .treatment-grid { grid-template-columns: 1fr; }
+      .treatment-card { min-height: 270px; padding: 27px; }
+
+      .treatment-feature { grid-template-columns: 1fr; }
+      .treatment-feature img { min-height: 260px; max-height: 330px; }
+      .treatment-feature-content { padding: 35px 27px; }
+
+      .approach-heading { position: static; }
+      .approach-step { grid-template-columns: 42px 1fr; gap: 15px; }
+      .approach-step h3 { font-size: 27px; }
+
+      .doctor-image { min-height: 420px; }
+      .doctor-copy { order: 1; }
+      .doctor-image { order: 2; }
+
+      .expectation-grid { grid-template-columns: 1fr; }
+      .expectation-card { min-height: auto; padding: 28px; }
+      .expectation-card .step-number { margin-bottom: 18px; }
+
+      .faq-layout { gap: 35px; }
+      .faq-question { font-size: 22px; }
+
+      .form-row { grid-template-columns: 1fr; gap: 0; }
+
+      .contact-form { padding: 27px 21px; }
+
+      .footer-top { grid-template-columns: 1fr 1fr; }
+      .footer-brand { grid-column: 1 / -1; }
+
+      .footer-bottom {
+        flex-direction: column;
+        gap: 8px;
+      }
+
+      .mobile-cta {
+        position: fixed;
+        z-index: 1100;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        display: grid;
+        grid-template-columns: 1fr 1.2fr;
+        gap: 9px;
+        padding: 10px 14px calc(10px + env(safe-area-inset-bottom));
+        border-top: 1px solid var(--color-border);
+        background: rgba(250,247,243,.97);
+        box-shadow: 0 -8px 25px rgba(36,36,36,.08);
+        backdrop-filter: blur(12px);
+      }
+
+      .mobile-cta .button {
+        min-height: 49px;
+        padding: 11px 10px;
+        font-size: 11px;
+      }
+    }
+
+    @media (max-width: 390px) {
+      .footer-top { grid-template-columns: 1fr; }
+      .footer-brand { grid-column: auto; }
+      .mobile-cta { grid-template-columns: .9fr 1.1fr; }
+      .mobile-cta .button { font-size: 10px; }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="topbar">
+    Hair restoration and aesthetic care · Deira, Dubai
+  </div>
+
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a class="brand" href="#home" aria-label="Sculpt Roots homepage">
+        <span class="brand-name">Sculpt Roots</span>
+        <span class="brand-sub">Medical Clinic · Dubai</span>
+      </a>
+
+      <nav class="main-nav" id="main-navigation" aria-label="Main navigation">
+        <a href="#about">Our Clinic</a>
+        <a href="#treatments">Treatments</a>
+        <a href="#approach">Your Journey</a>
+        <a href="#doctor">Medical Team</a>
+        <a href="#faq">FAQs</a>
+        <a href="#contact">Contact</a>
+      </nav>
+
+      <div class="nav-actions">
+        <a class="button button-primary" href="#contact">Request Consultation</a>
+        <button class="menu-toggle" type="button"
+          aria-label="Open navigation menu"
+          aria-expanded="false"
+          aria-controls="main-navigation">
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section class="hero" id="home">
+      <img
+        class="hero-image"
+        src="https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?auto=format&fit=crop&w=1800&q=85"
+        alt="Medical consultation in a modern clinical setting"
+        fetchpriority="high"
+        onerror="this.style.display='none'">
+
+      <div class="hero-content">
+        <p class="eyebrow">Sculpt Roots Medical Clinic · Dubai</p>
+        <h1>Restore your confidence. <em>Rediscover your natural look.</em></h1>
+        <p class="hero-copy">
+          Explore hair restoration and aesthetic treatment options with a
+          clinic focused on individual concerns, thoughtful consultation
+          and a considered approach to care.
+        </p>
+
+        <div class="hero-actions">
+          <a class="button button-primary" href="#contact">
+            Request a Consultation
+            <svg class="button-arrow" viewBox="0 0 20 20" fill="none"
+              aria-hidden="true">
+              <path d="M3 10h13M10 4l6 6-6 6" stroke="currentColor"
+                stroke-width="1.6" stroke-linecap="round"
+                stroke-linejoin="round"/>
+            </svg>
+          </a>
+          <a class="button button-light" href="#treatments">
+            Explore Treatments
+          </a>
+        </div>
+
+        <div class="hero-note">Personalised treatment discussions in Dubai</div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section class="intro" id="about">
+      <div class="container intro-grid">
+        <div class="intro-visual reveal">
+          <img
+            src="https://images.unsplash.com/photo-1622253692010-333f2da6031d?auto=format&fit=crop&w=1100&q=85"
+            alt="Healthcare professional in a clinical environment"
+            loading="lazy"
+            onerror="this.style.display='none'">
+          <div class="intro-caption">
+            <strong>Care shaped around the individual.</strong>
+            <span>A consultation-led approach</span>
+          </div>
+        </div>
+
+        <div class="intro-copy reveal">
+          <p class="eyebrow">A considered approach to care</p>
+          <h2>Understand your options before choosing your treatment.</h2>
+          <p class="lead">
+            Every concern is personal. Whether you are exploring hair
+            restoration or an aesthetic treatment, the first step is
+            understanding your goals and discussing the options that may
+            be appropriate for you.
+          </p>
+          <p>
+            Sculpt Roots Medical Clinic presents a range of hair
+            restoration and aesthetic services in Deira, Dubai. The
+            clinic's approach begins with a conversation about your
+            concerns, expectations and treatment suitability.
+          </p>
+          <a class="text-link" href="#contact">
+            Speak with the clinic
+            <span aria-hidden="true">↗</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- CREDIBILITY -->
+    <section class="trust-strip" aria-label="Clinic information">
+      <div class="container trust-grid">
+        <div class="trust-item">
+          <strong>Hair Restoration</strong>
+          <span>Explore surgical and non-surgical hair treatment options</span>
+        </div>
+        <div class="trust-item">
+          <strong>Aesthetic Treatments</strong>
+          <span>Discuss available aesthetic services and individual goals</span>
+        </div>
+        <div class="trust-item">
+          <strong>Deira, Dubai</strong>
+          <span>State 1 Building, Al Muraqabat</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- TREATMENTS -->
+    <section class="treatments" id="treatments">
+      <div class="container">
+        <div class="section-intro reveal">
+          <p class="eyebrow">Explore the possibilities</p>
+          <h2>Treatment options, clearly explained.</h2>
+          <p class="lead">
+            Discover the services listed by Sculpt Roots Medical Clinic.
+            A consultation can help establish which options may be
+            relevant to your individual needs.
+          </p>
+        </div>
+
+        <div class="treatment-grid">
+          <article class="treatment-card reveal">
+            <span class="treatment-number">01 / HAIR RESTORATION</span>
+            <div>
+              <h3>FUE Hair Transplant</h3>
+              <p>
+                Explore Follicular Unit Extraction and discuss the
+                procedure, suitability, expected recovery and individual
+                treatment considerations.
+              </p>
+              <a class="text-link" href="https://sculptroots.com/hair-restoration-3/">
+                Explore hair restoration <span aria-hidden="true">↗</span>
+              </a>
+            </div>
+          </article>
+
+          <article class="treatment-card reveal">
+            <span class="treatment-number">02 / FACIAL HAIR</span>
+            <div>
+              <h3>Beard & Eyebrow Transplant</h3>
+              <p>
+                Discuss facial hair restoration options, the areas you
+                would like to address and whether a transplant approach
+                may be suitable.
+              </p>
+              <a class="text-link" href="#contact">
+                Discuss your goals <span aria-hidden="true">↗</span>
+              </a>
+            </div>
+          </article>
+
+          <article class="treatment-card reveal">
+            <span class="treatment-number">03 / HAIRLINE</span>
+            <div>
+              <h3>Female Hairline Lowering</h3>
+              <p>
+                Learn about the hairline treatment option listed by the
+                clinic and arrange a discussion about your concerns and
+                suitability.
+              </p>
+              <a class="text-link" href="#contact">
+                Request information <span aria-hidden="true">↗</span>
+              </a>
+            </div>
+          </article>
+
+          <article class="treatment-card reveal">
+            <span class="treatment-number">04 / REGENERATIVE CARE</span>
+            <div>
+              <h3>PRP & Alopecia Solutions</h3>
+              <p>
+                Explore platelet-rich plasma and available hair-loss
+                treatment discussions based on your concerns and
+                clinical assessment.
+              </p>
+              <a class="text-link" href="#contact">
+                Ask about options <span aria-hidden="true">↗</span>
+              </a>
+            </div>
+          </article>
+
+          <article class="treatment-card reveal">
+            <span class="treatment-number">05 / SKIN & AESTHETICS</span>
+            <div>
+              <h3>Skin Rejuvenation</h3>
+              <p>
+                Discuss listed aesthetic services including mesotherapy,
+                PRP and other skin-focused treatment options.
+              </p>
+              <a class="text-link" href="#contact">
+                Explore aesthetic care <span aria-hidden="true">↗</span>
+              </a>
+            </div>
+          </article>
+
+          <article class="treatment-card reveal">
+            <span class="treatment-number">06 / AESTHETIC CARE</span>
+            <div>
+              <h3>Facial & Body Treatments</h3>
+              <p>
+                Ask the clinic about its listed services, including
+                dermal fillers, lip fillers, thread lifting, liposuction
+                and fat grafting.
+              </p>
+              <a class="text-link" href="#contact">
+                Discuss a treatment <span aria-hidden="true">↗</span>
+              </a>
+            </div>
+          </article>
+        </div>
+
+        <div class="treatment-feature reveal">
+          <img
+            src="https://images.unsplash.com/photo-1584982751601-97dcc096659c?auto=format&fit=crop&w=1100&q=85"
+            alt="Healthcare professional preparing for a patient consultation"
+            loading="lazy"
+            onerror="this.style.display='none'">
+
+          <div class="treatment-feature-content">
+            <p class="eyebrow">Start with a conversation</p>
+            <h3>Not sure which treatment is right for you?</h3>
+            <p>
+              You do not need to make a treatment decision before
+              speaking with the clinic. Share your concern and ask
+              about the options, assessment process and next steps.
+            </p>
+            <div>
+              <a class="button button-light" href="#contact">
+                Request a Consultation
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROCESS -->
+    <section class="approach" id="approach">
+      <div class="container approach-layout">
+        <div class="approach-heading reveal">
+          <p class="eyebrow">Your next steps</p>
+          <h2>A clearer path from enquiry to care.</h2>
+          <p class="lead">
+            Knowing what happens next can make it easier to take the
+            first step. Start with your questions and let the clinic
+            guide the conversation.
+          </p>
+          <a class="button button-outline" href="#contact">
+            Get in Touch
+          </a>
+        </div>
+
+        <div class="approach-list">
+          <article class="approach-step reveal">
+            <span class="step-number">01</span>
+            <div>
+              <h3>Tell us what concerns you.</h3>
+              <p>
+                Contact the clinic and describe the hair or aesthetic
+                concern you would like to discuss.
+              </p>
+            </div>
+          </article>
+
+          <article class="approach-step reveal">
+            <span class="step-number">02</span>
+            <div>
+              <h3>Discuss your options.</h3>
+              <p>
+                Use your consultation to ask questions about relevant
+                treatments, suitability and the information you need
+                before making a decision.
+              </p>
+            </div>
+          </article>
+
+          <article class="approach-step reveal">
+            <span class="step-number">03</span>
+            <div>
+              <h3>Understand the next step.</h3>
+              <p>
+                Discuss the recommended next steps with the clinic's
+                medical team. Treatment decisions should follow an
+                appropriate professional assessment.
+              </p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- DOCTOR -->
+    <section class="doctor" id="doctor">
+      <div class="container doctor-grid">
+        <div class="doctor-image reveal">
+          <img
+            src="https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?auto=format&fit=crop&w=1000&q=85"
+            alt="Illustrative portrait of a medical professional"
+            loading="lazy"
+            onerror="this.style.display='none'">
+        </div>
+
+        <div class="doctor-copy reveal">
+          <p class="eyebrow">Medical leadership</p>
+          <h2>Meet Dr Waqar Maqsood.</h2>
+          <p class="lead">
+            Sculpt Roots identifies Dr Waqar Maqsood as the medical
+            professional leading the clinic.
+          </p>
+          <p>
+            The clinic's published profile outlines medical education
+            and dermatology-related training. Visitors can use a
+            consultation to discuss their concerns, ask about relevant
+            experience and understand the treatment options available.
+          </p>
+
+          <ul class="credential-list">
+            <li>MBBS, as listed in the clinic's published profile</li>
+            <li>MCPS Dermatology, as listed in the clinic's published profile</li>
+            <li>Further clinical dermatology and dermatosurgery training listed by the clinic</li>
+          </ul>
+
+          <div class="credential-note">
+            Professional qualifications and registration details should
+            be confirmed directly with the clinic before treatment.
+            This page does not replace a medical consultation or
+            independent verification of credentials.
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- EXPECTATIONS -->
+    <section class="expectations">
+      <div class="container">
+        <div class="section-intro reveal">
+          <p class="eyebrow">An informed decision</p>
+          <h2>Good questions are part of good care.</h2>
+          <p class="lead">
+            A treatment conversation should leave you better informed.
+            Take the time to understand the process before deciding
+            what is right for you.
+          </p>
+        </div>
+
+        <div class="expectation-grid">
+          <article class="expectation-card reveal">
+            <span class="step-number">01</span>
+            <h3>Suitability</h3>
+            <p>
+              Ask whether the treatment is appropriate for your
+              individual circumstances and medical history.
+            </p>
+          </article>
+
+          <article class="expectation-card reveal">
+            <span class="step-number">02</span>
+            <h3>Expectations</h3>
+            <p>
+              Discuss realistic outcomes, limitations, potential risks
+              and the factors that may affect results.
+            </p>
+          </article>
+
+          <article class="expectation-card reveal">
+            <span class="step-number">03</span>
+            <h3>Aftercare</h3>
+            <p>
+              Understand recovery guidance, follow-up arrangements
+              and who to contact if you have concerns.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="faq" id="faq">
+      <div class="container faq-layout">
+        <div class="reveal">
+          <p class="eyebrow">Helpful information</p>
+          <h2>Questions before you begin?</h2>
+          <p class="lead">
+            Here are a few useful starting points. Contact the clinic
+            directly for treatment-specific advice and current
+            appointment information.
+          </p>
+        </div>
+
+        <div class="faq-list">
+          <article class="faq-item">
+            <button class="faq-question" type="button"
+              aria-expanded="false" aria-controls="faq-answer-1">
+              What treatments does Sculpt Roots offer?
+              <span class="faq-symbol" aria-hidden="true">+</span>
+            </button>
+            <div class="faq-answer" id="faq-answer-1" hidden>
+              The clinic lists hair restoration services such as FUE,
+              beard and eyebrow transplants, female hairline lowering
+              and PRP, alongside aesthetic services including fillers,
+              mesotherapy, thread lifting and other treatments. Ask
+              the clinic to confirm current availability.
+            </div>
+          </article>
+
+          <article class="faq-item">
+            <button class="faq-question" type="button"
+              aria-expanded="false" aria-controls="faq-answer-2">
+              How do I find out which treatment is suitable?
+              <span class="faq-symbol" aria-hidden="true">+</span>
+            </button>
+            <div class="faq-answer" id="faq-answer-2" hidden>
+              Contact the clinic to arrange a consultation. A qualified
+              medical professional can assess your individual concerns
+              and discuss suitable options, risks and expectations.
+            </div>
+          </article>
+
+          <article class="faq-item">
+            <button class="faq-question" type="button"
+              aria-expanded="false" aria-controls="faq-answer-3">
+              Where is the clinic located?
+              <span class="faq-symbol" aria-hidden="true">+</span>
+            </button>
+            <div class="faq-answer" id="faq-answer-3" hidden>
+              Sculpt Roots Medical Clinic lists its address as State 1
+              Building, Al Muraqabat, Deira, Dubai. Contact the clinic
+              before visiting to confirm the current location details.
+            </div>
+          </article>
+
+          <article class="faq-item">
+            <button class="faq-question" type="button"
+              aria-expanded="false" aria-controls="faq-answer-4">
+              How can I request an appointment?
+              <span class="faq-symbol" aria-hidden="true">+</span>
+            </button>
+            <div class="faq-answer" id="faq-answer-4" hidden>
+              Call the clinic on +971 55 256 3553 or use the enquiry
+              form below to prepare an appointment request by email.
+              The clinic can confirm available appointment times.
+            </div>
+          </article>
+
+          <article class="faq-item">
+            <button class="faq-question" type="button"
+              aria-expanded="false" aria-controls="faq-answer-5">
+              Does the website provide medical advice?
+              <span class="faq-symbol" aria-hidden="true">+</span>
+            </button>
+            <div class="faq-answer" id="faq-answer-5" hidden>
+              No. Website information is general and does not replace
+              an individual medical assessment. Treatment suitability,
+              risks and expected outcomes should be discussed with a
+              qualified healthcare professional.
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="contact" id="contact">
+      <div class="container contact-grid">
+        <div class="contact-copy reveal">
+          <p class="eyebrow">Start a conversation</p>
+          <h2>Your questions deserve a clear answer.</h2>
+          <p class="lead">
+            Whether you are exploring hair restoration or an aesthetic
+            treatment, contact Sculpt Roots to discuss your concerns
+            and find out what to do next.
+          </p>
+
+          <div class="contact-details">
+            <div class="contact-detail">
+              <span>Call the clinic</span>
+              <a href="tel:+971552563553">+971 55 256 3553</a>
+            </div>
+            <div class="contact-detail">
+              <span>Email</span>
+              <a href="mailto:sculptroots381@gmail.com">
+                sculptroots381@gmail.com
+              </a>
+            </div>
+            <div class="contact-detail">
+              <span>Visit</span>
+              <strong>State 1 Building, Al Muraqabat, Deira, Dubai, UAE</strong>
+            </div>
+            <div class="contact-detail">
+              <span>More information</span>
+              <a href="https://sculptroots.com/contact/"
+                target="_blank" rel="noopener">
+                Official contact page ↗
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="contact-form reveal">
+          <h3>Request a consultation</h3>
+          <p class="form-intro">
+            Share a few details and your preferred treatment area.
+            Your email application will open with the enquiry prepared.
+          </p>
+
+          <form id="consultation-form">
+            <div class="form-row">
+              <div class="field">
+                <label for="full-name">Your name</label>
+                <input id="full-name" name="name" type="text"
+                  placeholder="Full name" autocomplete="name" required>
+              </div>
+
+              <div class="field">
+                <label for="phone">Phone number</label>
+                <input id="phone" name="phone" type="tel"
+                  placeholder="Your phone number" autocomplete="tel" required>
+              </div>
+            </div>
+
+            <div class="field">
+              <label for="email">Email address</label>
+              <input id="email" name="email" type="email"
+                placeholder="you@example.com" autocomplete="email" required>
+            </div>
+
+            <div class="field">
+              <label for="interest">Treatment area</label>
+              <select id="interest" name="interest" required>
+                <option value="">Select an area</option>
+                <option>FUE hair transplant</option>
+                <option>Beard or eyebrow transplant</option>
+                <option>Female hairline lowering</option>
+                <option>PRP or hair loss concerns</option>
+                <option>Skin and aesthetic treatments</option>
+                <option>Other / Not sure yet</option>
+              </select>
+            </div>
+
+            <div class="field">
+              <label for="message">How can the clinic help?</label>
+              <textarea id="message" name="message"
+                placeholder="Briefly describe what you would like to discuss."></textarea>
+            </div>
+
+            <button class="button button-primary" type="submit">
+              Prepare Enquiry
+              <svg class="button-arrow" viewBox="0 0 20 20" fill="none"
+                aria-hidden="true">
+                <path d="M3 10h13M10 4l6 6-6 6" stroke="currentColor"
+                  stroke-width="1.6" stroke-linecap="round"
+                  stroke-linejoin="round"/>
+              </svg>
+            </button>
+
+            <p class="form-disclaimer">
+              This demonstration form prepares an email on your device.
+              It does not transmit or store your information on this
+              website. A live website should connect this form to the
+              clinic's approved enquiry system and privacy process.
+            </p>
+
+            <p class="form-status" id="form-status"
+              role="status" aria-live="polite"></p>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <a class="brand" href="#home">
+            <span class="brand-name">Sculpt Roots</span>
+            <span class="brand-sub">Medical Clinic · Dubai</span>
+          </a>
+          <p class="footer-description">
+            Hair restoration and aesthetic treatment options in
+            Deira, Dubai. Contact the clinic to discuss your
+            individual concerns and available services.
+          </p>
+        </div>
+
+        <div class="footer-column">
+          <h4>Explore</h4>
+          <div class="footer-links">
+            <a href="#about">Our Clinic</a>
+            <a href="#treatments">Treatments</a>
+            <a href="#approach">Your Journey</a>
+            <a href="#doctor">Medical Leadership</a>
+            <a href="#faq">FAQs</a>
+          </div>
+        </div>
+
+        <div class="footer-column">
+          <h4>Contact</h4>
+          <div class="footer-links">
+            <a href="tel:+971552563553">+971 55 256 3553</a>
+            <a href="mailto:sculptroots381@gmail.com">Email the Clinic</a>
+            <span>State 1 Building, Al Muraqabat, Deira, Dubai, UAE</span>
+            <a href="https://sculptroots.com/contact/"
+              target="_blank" rel="noopener">Official Contact Page ↗</a>
+          </div>
+        </div>
+      </div>
+
+      <p class="medical-disclaimer">
+        The information on this website is for general informational
+        purposes and is not a substitute for professional medical
+        advice, diagnosis or treatment. Individual suitability,
+        possible risks, recovery and expected outcomes must be
+        discussed with a qualified healthcare professional.
+        Treatment availability and clinic information should be
+        confirmed directly with Sculpt Roots Medical Clinic.
+      </p>
+
+      <div class="footer-bottom">
+        <span>© <span id="current-year"></span> Sculpt Roots Medical Clinic.</span>
+        <span>Deira, Dubai, United Arab Emirates</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- TWO PERSISTENT MOBILE CONVERSION ACTIONS -->
+  <div class="mobile-cta" aria-label="Quick contact options">
+    <a class="button button-outline" href="tel:+971552563553">
+      Call Clinic
+    </a>
+    <a class="button button-primary" href="#contact">
+      Request Consultation
+    </a>
+  </div>
+
+  <script>
+    // Mobile navigation
+    const menuToggle = document.querySelector(".menu-toggle");
+    const mainNavigation = document.querySelector(".main-nav");
+
+    function closeMenu() {
+      menuToggle.setAttribute("aria-expanded", "false");
+      menuToggle.setAttribute("aria-label", "Open navigation menu");
+      mainNavigation.classList.remove("is-open");
+      document.body.classList.remove("menu-open");
+    }
+
+    menuToggle.addEventListener("click", () => {
+      const isExpanded =
+        menuToggle.getAttribute("aria-expanded") === "true";
+
+      menuToggle.setAttribute("aria-expanded", String(!isExpanded));
+      menuToggle.setAttribute(
+        "aria-label",
+        isExpanded ? "Open navigation menu" : "Close navigation menu"
+      );
+
+      mainNavigation.classList.toggle("is-open", !isExpanded);
+      document.body.classList.toggle("menu-open", !isExpanded);
+    });
+
+    mainNavigation.querySelectorAll("a").forEach(link => {
+      link.addEventListener("click", closeMenu);
+    });
+
+    window.addEventListener("resize", () => {
+      if (window.innerWidth > 760) closeMenu();
+    });
+
+    // Accessible FAQ accordion
+    document.querySelectorAll(".faq-question").forEach(button => {
+      button.addEventListener("click", () => {
+        const isExpanded =
+          button.getAttribute("aria-expanded") === "true";
+
+        const answerId = button.getAttribute("aria-controls");
+        const answer = document.getElementById(answerId);
+
+        button.setAttribute("aria-expanded", String(!isExpanded));
+        answer.hidden = isExpanded;
+      });
+    });
+
+    // Consultation request: prepares a message in the visitor's email app.
+    // Connect to an approved clinic form endpoint for a production deployment.
+    const consultationForm = document.getElementById("consultation-form");
+    const formStatus = document.getElementById("form-status");
+
+    consultationForm.addEventListener("submit", event => {
+      event.preventDefault();
+
+      if (!consultationForm.reportValidity()) return;
+
+      const data = new FormData(consultationForm);
+      const subject = encodeURIComponent(
+        "Consultation Request - Sculpt Roots"
+      );
+
+      const body = encodeURIComponent(
+        "Hello Sculpt Roots Medical Clinic,\n\n" +
+        "I would like to enquire about a consultation.\n\n" +
+        "Name: " + data.get("name") + "\n" +
+        "Phone: " + data.get("phone") + "\n" +
+        "Email: " + data.get("email") + "\n" +
+        "Treatment area: " + data.get("interest") + "\n\n" +
+        "Message: " + (data.get("message") || "Not provided") +
+        "\n\nThank you."
+      );
+
+      formStatus.textContent =
+        "Opening your email application with the enquiry details.";
+
+      window.location.href =
+        "mailto:sculptroots381@gmail.com?subject=" +
+        subject + "&body=" + body;
+    });
+
+    // Current year
+    document.getElementById("current-year").textContent =
+      new Date().getFullYear();
+
+    // Subtle reveal effects with reduced-motion support
+    const revealItems = document.querySelectorAll(".reveal");
+
+    if ("IntersectionObserver" in window &&
+        !window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
+      const revealObserver = new IntersectionObserver((entries, observer) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add("is-visible");
+            observer.unobserve(entry.target);
+          }
+        });
+      }, { threshold: 0.12 });
+
+      revealItems.forEach(item => revealObserver.observe(item));
+    } else {
+      revealItems.forEach(item => item.classList.add("is-visible"));
+    }
+  </script>
+</body>
+</html>
